@@ -143,7 +143,7 @@
 
         var legendDiv = document.createElement("div"); 
         legendDiv.className += "graph-legend";
-        legendDiv.innerHTML = "<table><tr><td> <div style='display: inline-block;background-color:red'>&nbsp;</div>  Likes  </td><td>  <div style='display: inline-block;background-color:green'>&nbsp;</div>  Views</td></tr></table>";
+        legendDiv.innerHTML = "<table><tr><td> <div style='display: inline-block;background-color:"+this.options.colors[0]+"'>&nbsp;</div>  Likes  </td><td>  <div style='display: inline-block;background-color:"+this.options.colors[1]+"'>&nbsp;</div>  Views</td></tr></table>";
         mainDiv.appendChild(legendDiv);
 
 
