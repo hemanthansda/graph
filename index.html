@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Graph Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/graph.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div id="wrap">
+        <!-- Begin page content -->
+        <div class="container">
+            <div class="page-header">
+                <h1>GRAPH DEMO</h1>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span6 graph">					
+
+                </div>
+
+                <div class="span6 graph2">					
+
+                </div>
+                <div class="span6">
+                    <h4>Subheading</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                    <h4>Subheading</h4>
+                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                    <h4>Subheading</h4>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+		window.onload = function() {
+		  var graph = new Graph({
+		  	"className": "graph", 
+		  	graph_data :  [ 
+		  		//[data, likeCount, viewCount] 
+        		['10/01/2016', 10, 100],
+        		['15/01/2016', 50, 200],
+        		['20/01/2016', 340, 100],
+        		['25/01/2016', 110, 300]      
+      		]
+		  });
+		  graph.render();
+
+		  var graph2 = new Graph({
+		  	"className": "graph2", 
+		  	"title": "My  chart",
+		  	graph_data :  [ 
+		  		//[data, likeCount, viewCount] 
+        		['10/01/2016', 1100, 1110],
+        		['15/01/2016', 1240, 2000],
+        		['20/01/2016', 300, 1140],
+        		['25/01/2016', 1999, 2300]      
+      		]
+		  });
+		  graph2.render();		  
+
+		};
+    </script>
+</body>
+
+</html>
