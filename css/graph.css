@@ -1,6 +1,11 @@
 .graph-section{
   position: relative;
 }
+
+.filter-by{
+  float: right;
+}
+
 .graph-title{
   text-align: center;
   font-weight: bold;
@@ -12,6 +17,7 @@
   width: 100px;
   right:0px;
 }
+
 .bar {
   vertical-align: bottom;
 }
